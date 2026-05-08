@@ -1,4 +1,4 @@
-# ⚖️ Oficina Jurídica Profesional - Landing Page
+
 
 Esta es la plataforma digital oficial del **Despacho Jurídico del Lic. Mario José López Villatoro**, diseñada para ofrecer una experiencia de usuario fluida, profesional y optimizada para dispositivos móviles.
 
