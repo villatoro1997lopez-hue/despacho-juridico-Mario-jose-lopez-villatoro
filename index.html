@@ -3,206 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Despacho Jurídico Profesional en Santa Rosa de Lima, dirigido por el Lic. Mario José López Villatoro. Asesoría legal eficiente y personalizada.">
+
+  <meta name="description" content="Despacho Jurídico Profesional en Santa Rosa de Lima, dirigido por el Lic. Mario José López Villatoro. Asesoría legal eficiente y personalizada.">
+
   <title>Despacho Jurídico Profesional | Mario José López Villatoro</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/jpeg" href="mariolopez.jpeg">
+
+  <link rel="icon" type="image/jpeg" href="mariolopez.jpeg">
+
   <style>
-    :root {
-      --azul-oscuro: #111827;
-      --azul-medio: #1f2937;
-      --dorado: #c5a059;
-      --gris-fondo: #f3f4f6;
-      --blanco: #ffffff;
+
+    :root{
+      --azul-oscuro:#111827;
+      --azul-medio:#1f2937;
+      --dorado:#c5a059;
+      --gris-fondo:#f3f4f6;
+      --blanco:#ffffff;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--gris-fondo);
-      color: #333;
-      overflow-x: hidden;
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background-color:var(--gris-fondo);
+      color:#333;
+      overflow-x:hidden;
     }
 
-    /* HEADER RESPONSIVO */
-    header {
-      background: var(--azul-oscuro);
-      color: white;
-      padding: 20px 5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      border-bottom: 4px solid var(--dorado);
+    /* HEADER */
+
+    header{
+      background:var(--azul-oscuro);
+      color:white;
+      padding:20px 5%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      border-bottom:4px solid var(--dorado);
     }
 
-    .logo-container img {
-      width: 80px;
-      height: auto;
-      margin-bottom: 15px;
-      border: 2px solid var(--dorado);
-      border-radius: 4px;
+    .logo-container img{
+      width:80px;
+      height:auto;
+      margin-bottom:15px;
+      border:2px solid var(--dorado);
+      border-radius:4px;
     }
 
-    .header-text h1 {
-      /* CAMBIO A FUENTE LOBSTER */
-      font-family: 'Lobster', cursive;
-      margin: 0;
-      font-size: 1.8em; 
-      letter-spacing: 1px;
-      /* Lobster se ve mejor sin mayúsculas forzadas, pero puedes dejarlo si prefieres */
-      text-transform: none; 
-      font-weight: 400;
+    .header-text{
+      text-align:center;
     }
 
-    .header-text h3 {
-  margin: 5px 0 0 0;
-  color: var(--dorado); /* Sigue usando el código #c5a059 definido arriba */
-  font-weight: 600;
-  font-size: 1.10em;
-  letter-spacing: 1px;
-
+    .header-text h1{
+      font-family:'Lobster',cursive;
+      margin:0;
+      font-size:1.8em;
+      letter-spacing:1px;
+      text-transform:none;
+      font-weight:400;
     }
 
-    /* NAVEGACIÓN */
-    nav {
-      background: var(--azul-medio);
-      display: flex;
-      justify-content: center;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    .header-text h3{
+      margin:5px 0 0 0;
+      color:var(--dorado);
+      font-weight:600;
+      font-size:1.10em;
+      letter-spacing:1px;
     }
 
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      padding: 15px 5px;
-      font-size: 0.7em;
-      font-weight: 600;
-      text-transform: uppercase;
-      flex: 1;
-      text-align: center;
-      cursor: pointer;
-      border-bottom: 3px solid transparent;
-      transition: 0.3s;
+    /* NAV */
+
+    nav{
+      background:var(--azul-medio);
+      display:flex;
+      justify-content:center;
+      box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
-    nav a:hover, nav a.active {
-      color: var(--dorado);
-      border-bottom: 3px solid var(--dorado);
-      background: rgba(255,255,255,0.05);
+    nav a{
+      color:#e5e7eb;
+      text-decoration:none;
+      padding:15px 5px;
+      font-size:0.7em;
+      font-weight:600;
+      text-transform:uppercase;
+      flex:1;
+      text-align:center;
+      cursor:pointer;
+      border-bottom:3px solid transparent;
+      transition:0.3s;
     }
 
-    /* CONTENEDOR PRINCIPAL */
-    .main-wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      max-width: 1300px;
-      margin: 20px auto;
-      gap: 20px;
-      padding: 0 15px;
+    nav a:hover,
+    nav a.active{
+      color:var(--dorado);
+      border-bottom:3px solid var(--dorado);
+      background:rgba(255,255,255,0.05);
     }
 
-    .view-content {
-      background: var(--blanco);
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      text-align: center;
+    /* CONTENIDO */
+
+    .main-wrapper{
+      display:grid;
+      grid-template-columns:1fr;
+      max-width:1300px;
+      margin:20px auto;
+      gap:20px;
+      padding:0 15px;
     }
 
-    .img-presentacion {
-      width: 80%;
-      max-width: 300px;
-      border-radius: 8px;
-      margin: 20px auto;
-      display: block;
+    .view-content{
+      background:var(--blanco);
+      padding:25px;
+      border-radius:8px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.05);
+      text-align:center;
     }
 
-    /* SIDEBAR - OCULTO POR DEFECTO */
-    .sidebar {
-      background: var(--blanco);
-      padding: 25px;
-      border-radius: 8px;
-      border-top: 5px solid var(--azul-oscuro);
-      text-align: center;
-      display: none; 
+    .img-presentacion{
+      width:80%;
+      max-width:300px;
+      border-radius:8px;
+      margin:20px auto;
+      display:block;
     }
 
-    .btn-contact {
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 12px;
-      text-align: center;
-      border-radius: 5px;
-      font-weight: 600;
-      margin-top: 20px;
+    /* SIDEBAR */
+
+    .sidebar{
+      background:var(--blanco);
+      padding:25px;
+      border-radius:8px;
+      border-top:5px solid var(--azul-oscuro);
+      text-align:center;
+      display:none;
+    }
+
+    .btn-contact{
+      background:#25d366;
+      color:white;
+      text-decoration:none;
+      display:block;
+      padding:12px;
+      text-align:center;
+      border-radius:5px;
+      font-weight:600;
+      margin-top:20px;
     }
 
     /* TRÁMITES */
-    .grid-tramites {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 20px;
+
+    .grid-tramites{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+      margin-top:20px;
     }
 
-    .card-btn {
-      background: var(--azul-oscuro);
-      color: white;
-      padding: 15px 5px;
-      border: none;
-      border-bottom: 3px solid var(--dorado);
-      border-radius: 4px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 0.8em;
-      cursor: pointer;
+    .card-btn{
+      background:var(--azul-oscuro);
+      color:white;
+      padding:15px 5px;
+      border:none;
+      border-bottom:3px solid var(--dorado);
+      border-radius:4px;
+      font-family:'Poppins',sans-serif;
+      font-weight:600;
+      font-size:0.8em;
+      cursor:pointer;
     }
 
-    .info-box {
-      background: #f9fafb;
-      padding: 20px;
-      border-left: 5px solid var(--azul-oscuro);
-      margin-top: 20px;
-      display: none;
-      text-align: left;
-      animation: fadeIn 0.5s;
+    .info-box{
+      background:#f9fafb;
+      padding:20px;
+      border-left:5px solid var(--azul-oscuro);
+      margin-top:20px;
+      display:none;
+      text-align:left;
+      animation:fadeIn 0.5s;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(10px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
     }
 
-    /* AJUSTES PC */
-    @media (min-width: 900px) {
-      header { flex-direction: row; text-align: left; padding: 25px 8%; }
-      .logo-container img { margin-bottom: 0; margin-right: 25px; width: 90px; }
-      .header-text h1 { font-size: 2.5em; }
-      nav a { flex: none; padding: 15px 25px; font-size: 0.85em; }
-      .main-wrapper.has-sidebar { grid-template-columns: 3fr 1fr; }
-      .view-content { text-align: left; padding: 40px; }
-      .img-presentacion { margin: 20px 0; }
-      .sidebar { text-align: left; }
-      .grid-tramites { grid-template-columns: repeat(3, 1fr); }
+    /* PC */
+
+    @media (min-width:900px){
+
+      header{
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        gap:25px;
+        padding:25px 8%;
+      }
+
+      .logo-container img{
+        margin-bottom:0;
+        width:90px;
+      }
+
+      .header-text h1{
+        font-size:2.5em;
+      }
+
+      nav a{
+        flex:none;
+        padding:15px 25px;
+        font-size:0.85em;
+      }
+
+      .main-wrapper.has-sidebar{
+        grid-template-columns:3fr 1fr;
+      }
+
+      .view-content{
+        text-align:left;
+        padding:40px;
+      }
+
+      .img-presentacion{
+        margin:20px 0;
+      }
+
+      .sidebar{
+        text-align:left;
+      }
+
+      .grid-tramites{
+        grid-template-columns:repeat(3,1fr);
+      }
     }
+
   </style>
 </head>
+
 <body>
 
 <header>
+
   <div class="logo-container">
     <img src="mariolopez.jpeg" alt="Logo">
   </div>
+
   <div class="header-text">
     <h1>Despacho Jurídico Profesional</h1>
     <h3>Lic. Mario José López Villatoro</h3>
   </div>
+
 </header>
 
 <nav id="mainNav">
